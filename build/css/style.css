@@ -537,6 +537,22 @@ button,
   outline: none;
 }
 
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oll-links {
+  cursor: pointer;
+}
+.oll-links:hover, .oll-links:focus {
+  opacity: 0.8;
+}
+.oll-links:active {
+  opacity: 0.3;
+}
+
 .container {
   width: 100%;
   max-width: 1920px;
@@ -571,13 +587,10 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-}
-.btn--red {
-  background-color: #ff1553;
-}
-.btn:disabled {
-  opacity: 0.5;
-  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
@@ -586,6 +599,13 @@ button,
 }
 .btn.focus-visible:focus {
   opacity: 0.8;
+}
+.btn--red {
+  background-color: #ff1553;
+}
+.btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .modal {

@@ -60,3 +60,23 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.oll-links {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
