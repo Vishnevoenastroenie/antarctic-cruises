@@ -1,18 +1,14 @@
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1130px; //1336 - 103*2
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 103px;
 
-  @include vp-1439 {
-    padding: 0 32px;
+  @media (max-width: $tablet-size-max) {
+    padding: 0 45px;
   }
 
-  @include vp-1023 {
-    padding: 0 24px;
-  }
-
-  @include vp-767 {
-    padding: 0 16px;
+  @media (max-width: $mobile-size-max) {
+    padding: 0 25px;
   }
 }
