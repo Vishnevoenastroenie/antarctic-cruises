@@ -1244,9 +1244,9 @@ button,
 }
 @media (max-width: 1023px) {
   .header__navigation-list {
-    -webkit-column-gap: 24px;
-       -moz-column-gap: 24px;
-            column-gap: 24px;
+    -webkit-column-gap: 21px;
+       -moz-column-gap: 21px;
+            column-gap: 21px;
   }
 }
 @media (max-width: 767px) {
@@ -1409,6 +1409,112 @@ button,
     font-size: 16px;
     line-height: 22px;
   }
+}
+
+.promo__container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1250px;
+  padding-top: 120px;
+  padding-bottom: 145px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 1300px) {
+  .promo__container {
+    margin: 0 -45px;
+  }
+}
+@media (max-width: 1023px) {
+  .promo__container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin: 0;
+    padding: 91px 0 66px;
+    -webkit-column-gap: 28px;
+       -moz-column-gap: 28px;
+            column-gap: 28px;
+  }
+}
+@media (max-width: 1000px) {
+  .promo__container {
+    margin: 0 -5px;
+  }
+}
+@media (max-width: 770px) {
+  .promo__container {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .promo__container {
+    margin: 0;
+    padding: 0;
+    padding-top: 58px;
+    padding-bottom: 85px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.promo__description h2 {
+  margin: 0;
+  margin-bottom: 23px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+}
+@media (max-width: 1023px) {
+  .promo__description h2 {
+    margin-bottom: 15px;
+    padding: 0;
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .promo__description h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+.promo__description p {
+  margin: 0 0 5px;
+  padding: 0;
+}
+@media (max-width: 1023px) {
+  .promo__description p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .promo__description p {
+    margin-bottom: 42px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .promo__image {
+    margin-top: 9px;
+  }
+}
+@media (max-width: 767px) {
+  .promo__image {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.promo__image img {
+  background-color: #9fc5e8;
 }
 
 /* @mixin hover-focus {
