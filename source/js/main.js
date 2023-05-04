@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {Burger} from './modules/burger-menu';
+import {Burger} from './modules/burger-menu/burger-menu';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
