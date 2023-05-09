@@ -22,8 +22,8 @@
     text-align: center;
 
     @media (max-width: $tablet-size-max) {
-      margin-bottom: 51px;
-      padding-top: 88px;
+      margin-bottom: 49px;
+      padding-top: 90px;
 
       font-size: 26px;
       line-height: 39px;
@@ -60,7 +60,7 @@
   row-gap: 30px;
 
   @media (max-width: $tablet-size-max) {
-    column-gap: 4.4%;
+    column-gap: 4.5%;
 
     grid-template-columns: repeat(2, 1fr);
     row-gap: 29px;
@@ -70,7 +70,7 @@
     margin: 0 auto;
 
     grid-template-columns: 1fr;
-    row-gap: 30px;
+    row-gap: 33px;
   }
 }
 
@@ -85,6 +85,46 @@
   dl {
     min-height: 262px;
     margin: 0;
+
+    @media (max-width: $tablet-size-max) {
+      min-height: 360px;
+    }
+
+    @media (max-width: 990px) {
+      min-height: 350px;
+    }
+
+    @media (max-width: 970px) {
+      min-height: 340px;
+    }
+
+    @media (max-width: 930px) {
+      min-height: 330px;
+    }
+
+    @media (max-width: 900px) {
+      min-height: 310px;
+    }
+
+    @media (max-width: 880px) {
+      min-height: 290px;
+    }
+
+    @media (max-width: 830px) {
+      min-height: 270px;
+    }
+
+    @media (max-width: 790px) {
+      min-height: 260px;
+    }
+
+    @media (max-width: $tablet-size-min) {
+      min-height: 241px;
+    }
+
+    @media (max-width: $mobile-size-max) {
+      height: auto;
+    }
   }
 
   dt {
@@ -108,10 +148,27 @@
 .products__item {
   display: grid;
   max-width: 260px;
+  height: 100%;
   min-height: 386px;
 
   grid-template-columns: 1fr;
   grid-template-rows: 80.57% 19.43%;
+
+  @media (max-width: 1200px) {
+    min-height: 395px;
+  }
+
+  @media (max-width: 1150px) {
+    min-height: 400px;
+  }
+
+  @media (max-width: 1100px) {
+    min-height: 410px;
+  }
+
+  @media (max-width: 1050px) {
+    min-height: 425px;
+  }
 
   @media (max-width: $tablet-size-max) {
     width: 100%;
@@ -124,16 +181,18 @@
 
   @media (max-width: $mobile-size-max) {
     width: 100%;
+    min-height: 270px;
 
     aspect-ratio: 1 / 1.42;
   }
 
   h3 {
     align-self: self-end;
+    width: max-content;
     min-height: 13px;
     margin: 0;
     margin-bottom: 15px;
-    padding: 30px;
+    padding: 0;
     padding-top: 16px;
 
     font-weight: 500;
@@ -142,14 +201,7 @@
     color: $color-alice-blue;
 
     @media (max-width: $tablet-size-max) {
-      padding-bottom: 28px;
-      padding-left: 35px;
-    }
-
-    @media (max-width: $mobile-size-max) {
-      padding-top: 30px;
-      padding-bottom: 18px;
-      padding-left: 25px;
+      padding: 0;
     }
   }
 
@@ -164,33 +216,25 @@
 
     .products__description {
       display: block;
-      //height: 100%;
-      //min-height: 242px;  // 386- (105+35)    УБРАТЬ
       height: 310px;
-      padding: 0 25px;
-      padding-top: 15px;
-      //padding-bottom: 25px;
-      //overflow-y: scroll;  УБРАТЬ
+      padding: 13px 20px 0 25px;
 
       grid-column: 1 / 2;
       grid-row: 1 / 2;
 
-      @media (max-width: $tablet-size-max) {
-        padding-bottom: 12px;
-        padding-left: 35px;
+      @media (max-width: 1200px) {
+        padding: 28px 20px 30px;
       }
 
-      @media (max-width: $mobile-size-max) {
-        height: auto;
-        padding-left: 25px;
+      @media (max-width: 1100px) {
+        padding: 28px 13px 30px;
       }
-    }
-
-    h3 {
-      padding: 0;
-      padding-top: 15px;
 
       @media (max-width: $tablet-size-max) {
+        padding: 28px 15px 30px;
+      }
+
+      @media (max-width: $tablet-size-min) {
         padding-left: 35px;
       }
 
@@ -222,13 +266,10 @@
   display: block;
   justify-content: center;
   align-items: center;
-  min-width: 170px;
-  //max-width: 100%; УБРАТЬ
+  min-width: 210px;
   min-height: 40px;
   margin-top: auto;
-  //margin-bottom: 35px;
   margin-bottom: auto;
-  //padding: 10px 47px 9px;  УБРАТЬ
 
   font-weight: 600;
   font-size: 14px;
@@ -241,15 +282,88 @@
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 
+  @media (max-width: 1200px) {
+    min-width: 200px;
+  }
+
+  @media (max-width: 1150px) {
+    min-width: 180px;
+  }
+
   @media (max-width: $tablet-size-max) {
-    margin: 35px;
-    margin-top: 0;
+    min-width: 400px;
+  }
+
+  @media (max-width: 1015px) {
+    min-width: 380px;
+  }
+
+  @media (max-width: 1000px) {
+    min-width: 370px;
+  }
+
+  @media (max-width: 950px) {
+    min-width: 360px;
+  }
+
+  @media (max-width: 930px) {
+    min-width: 350px;
+  }
+
+  @media (max-width: 920px) {
+    min-width: 340px;
+  }
+
+  @media (max-width: 900px) {
+    min-width: 330px;
+  }
+
+  @media (max-width: 880px) {
+    min-width: 320px;
+  }
+
+  @media (max-width: 850px) {
+    min-width: 310px;
+  }
+
+  @media (max-width: 830px) {
+    min-width: 300px;
+  }
+
+  @media (max-width: 810px) {
+    min-width: 290px;
+  }
+
+  @media (max-width: 790px) {
+    min-width: 280px;
+  }
+
+  @media (max-width: $tablet-size-min) {
+    min-width: 239px;
+    margin-top: auto;
     margin-bottom: auto;
   }
 
   @media (max-width: $mobile-size-max) {
-    margin: 35px 25px;
-    margin-top: 0;
+    width: 65%;
+    margin: 0 25px;
+  }
+
+  @media (max-width: 370px) {
+    width: 60%;
+    margin: 0;
+  }
+
+  @media (max-width: 350px) {
+    width: 45%;
+    margin: 0;
+  }
+
+  @media (max-width: 335px) {
+    min-width: 220px;
+    max-width: 220px;
+    margin: 0;
+    padding-right: 0;
   }
 
   &:focus,
