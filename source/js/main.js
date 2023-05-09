@@ -10,9 +10,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  // eslint-disable-next-line new-cap
-  Burger();
 
+  const burger = new Burger();
+  burger.init();
   // Modules
   // ---------------------------------
 

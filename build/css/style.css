@@ -1940,7 +1940,7 @@ button,
   width: max-content;
   margin: 0 auto;
   margin-bottom: 49px;
-  padding-top: 85px;
+  padding-top: 86px;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -2058,6 +2058,7 @@ button,
   -ms-flex-item-align: self-end;
       -ms-grid-row-align: self-end;
       align-self: self-end;
+  min-height: 13px;
   margin: 0;
   margin-bottom: 15px;
   padding: 30px;
@@ -2088,9 +2089,9 @@ button,
 }
 .products__item:hover .products__description, .products__item:focus .products__description, .products__item:focus-within .products__description {
   display: block;
+  min-height: 242px;
   padding: 0 25px;
   padding-top: 15px;
-  padding-bottom: 25px;
   overflow-y: scroll;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -2131,18 +2132,6 @@ button,
     padding-left: 25px;
   }
 }
-.products__item:hover .products__btn, .products__item:focus .products__btn, .products__item:focus-within .products__btn {
-  position: absolute;
-  bottom: 35px;
-  display: block;
-  margin-bottom: auto;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-}
 
 .products__image {
   -ms-grid-column: 1;
@@ -2164,7 +2153,9 @@ button,
 }
 
 .products__btn {
+  position: absolute;
   display: none;
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2173,20 +2164,22 @@ button,
           align-items: center;
   min-width: 170px;
   max-width: 100%;
-  margin: 0 25px;
+  min-height: 40px;
   margin-top: auto;
-  margin-bottom: 35px;
-  padding: 10px 0;
-  padding-bottom: 9px;
+  margin-bottom: auto;
+  padding: 10px 47px 9px;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   color: #011c40;
   background-color: #f9fbfd;
-  -webkit-transition: linear 0.2s opacity;
-  -o-transition: linear 0.2s opacity;
-  transition: linear 0.2s opacity;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
 }
 @media (max-width: 1023px) {
   .products__btn {
