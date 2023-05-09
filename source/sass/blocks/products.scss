@@ -1,6 +1,5 @@
 @import "../variables";
 
-//После обновления ветки
 .products {
   width: 100%;
 }
@@ -84,6 +83,7 @@
   line-height: 20px;
 
   dl {
+    min-height: 262px;
     margin: 0;
   }
 
@@ -108,7 +108,7 @@
 .products__item {
   display: grid;
   max-width: 260px;
-  height: 386px;
+  min-height: 386px;
 
   grid-template-columns: 1fr;
   grid-template-rows: 80.57% 19.43%;
@@ -164,23 +164,16 @@
 
     .products__description {
       display: block;
-     // height: 100%;
-      min-height: 242px;  // 386- (105+35)
+      //height: 100%;
+      //min-height: 242px;  // 386- (105+35)    УБРАТЬ
+      height: 310px;
       padding: 0 25px;
       padding-top: 15px;
       //padding-bottom: 25px;
-      overflow-y: scroll;
+      //overflow-y: scroll;  УБРАТЬ
 
       grid-column: 1 / 2;
       grid-row: 1 / 2;
-      scrollbar-width: none;
-
-      /* stylelint-disable */
-      &::-webkit-scrollbar {
-        display: none;
-      }
-
-      /* stylelint-enable */
 
       @media (max-width: $tablet-size-max) {
         padding-bottom: 12px;
@@ -226,17 +219,16 @@
 .products__btn {
   position: absolute;
 
-  display: none;
   display: block;
   justify-content: center;
   align-items: center;
   min-width: 170px;
-  max-width: 100%;
+  //max-width: 100%; УБРАТЬ
   min-height: 40px;
   margin-top: auto;
   //margin-bottom: 35px;
   margin-bottom: auto;
-  padding: 10px 47px 9px;
+  //padding: 10px 47px 9px;  УБРАТЬ
 
   font-weight: 600;
   font-size: 14px;

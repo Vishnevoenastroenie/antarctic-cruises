@@ -1,1 +1,51 @@
 @import "../variables";
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 403px;
+  margin-left: auto;
+  padding: 50px;
+  padding-top: 42px;
+
+  color: $color-alice-blue;
+
+  background-color: $color-tangaroa;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 28px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+
+    @media (max-width: $mobile-size-max) {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+    }
+
+    @media (max-width: $mobile-size-max) {
+      padding: 34px 30px 40px;
+    }
+  }
+}
+
+.feedback__form-button[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 43px;
+  margin-top: auto;
+  padding: 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-tangaroa;
+
+  background-color: $color-alice-blue;
+}
