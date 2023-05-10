@@ -155,7 +155,7 @@
         <div class="products__container container">
           <h2>Ближайшие круизы</h2>
           <ul class="products__list list-reset">
-            <li class="products__item">
+            <li class="products__item" tabindex="0">
               <div class="products__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/products/astoria-mobile.webp 1x, img/products/astoria-mobile@2x.webp 2x">
@@ -187,7 +187,7 @@
               </div>
             </li>
 
-            <li class="products__item">
+            <li class="products__item" tabindex="0">
               <div class="products__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/products/aurora-mobile.webp 1x, img/products/aurora-mobile@2x.webp 2x">
@@ -219,7 +219,7 @@
               </div>
             </li>
 
-            <li class="products__item">
+            <li class="products__item" tabindex="0">
               <div class="products__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/products/atlantis-mobile.webp 1x, img/products/atlantis-mobile@2x.webp 2x">
@@ -251,7 +251,7 @@
               </div>
             </li>
 
-            <li class="products__item">
+            <li class="products__item" tabindex="0">
               <div class="products__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/products/odysseus-mobile.webp 1x, img/products/odysseus-mobile@2x.webp 2x">
@@ -283,7 +283,7 @@
               </div>
             </li>
 
-            <li class="products__item">
+            <li class="products__item" tabindex="0">
               <div class="products__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/products/olympia-mobile.webp 1x, img/products/olympia-mobile@2x.webp 2x">
@@ -315,7 +315,7 @@
               </div>
             </li>
 
-            <li class="products__item">
+            <li class="products__item" tabindex="0">
               <div class="products__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/products/aurora-mobile.webp 1x, img/products/aurora-mobile@2x.webp 2x">
@@ -347,7 +347,7 @@
               </div>
             </li>
 
-            <li class="products__item">
+            <li class="products__item" tabindex="0">
               <div class="products__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/products/leonor-mobile.webp 1x, img/products/leonor-mobile@2x.webp 2x">
@@ -379,7 +379,7 @@
               </div>
             </li>
 
-            <li class="products__item">
+            <li class="products__item" tabindex="0">
               <div class="products__image">
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/products/minion-mobile.webp 1x, img/products/minion-mobile@2x.webp 2x">
@@ -434,9 +434,9 @@
               <div class="custom-input" data-required data-validate-type="email">
                 <input name="email" type="email" aria-label="Введите ваш Email." autocomplete="off" required placeholder="Email">
               </div>
-              <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox">
+              <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-required>
                 <input id="personaldata" name="personaldata" type="checkbox" checked required>
-                <label for="personaldata">
+                <label for="personaldata" data-message-base="Поле обязательно к заполнению">
                   <span class="custom-toggle__icon"></span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных
                 </label>
               </div>

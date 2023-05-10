@@ -187,17 +187,16 @@
   }
 
   h3 {
-    align-self: self-end;
-    width: max-content;
-    min-height: 13px;
+    //position: absolute;
+    z-index: 5;
+
+    align-self: flex-end; //Для грида не работает
     margin: 0;
-    margin-bottom: 15px;
-    padding: 0;
-    padding-top: 16px;
+    padding: 1px 30px 23px;
 
     font-weight: 500;
     font-size: 18px;
-    line-height: 150%;
+    line-height: 27px;
     color: $color-alice-blue;
 
     @media (max-width: $tablet-size-max) {
@@ -209,6 +208,25 @@
   &:focus,
   &:focus-within {
     background-color: $color-tangaroa;
+
+    h3 {
+      align-self: self-end;
+      width: max-content;
+      min-height: 13px;
+      margin: 0;
+      margin-bottom: 15px;
+      padding: 0;
+      padding-top: 16px;
+
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      color: $color-alice-blue;
+
+      @media (max-width: $tablet-size-max) {
+        padding: 0;
+      }
+    }
 
     .products__image {
       display: none;

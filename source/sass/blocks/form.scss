@@ -5,13 +5,40 @@
   flex-direction: column;
   width: 100%;
   max-width: 403px;
+  min-height: 455px;
   margin-left: auto;
   padding: 50px;
-  padding-top: 42px;
+  padding-top: 43px;
 
   color: $color-alice-blue;
 
   background-color: $color-tangaroa;
+
+  @media (max-width: $tablet-size-max) {
+    margin-left: 0;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    padding: 34px 30px 40px;
+  }
+
+  input {
+    width: 100%;
+    min-height: 43px;
+    padding-left: 13px;
+
+    line-height: 21px;
+
+    &:hover {
+      outline: 2px solid $color-turquoise;
+      outline-offset: 2px;
+    }
+
+    &:focus {
+      outline: 2px solid $color-jordy-blue;
+      outline-offset: 2px;
+    }
+  }
 
   h3 {
     margin: 0;
@@ -22,13 +49,11 @@
     line-height: 150%;
 
     @media (max-width: $mobile-size-max) {
+      padding: 0;
+
       font-size: 18px;
       line-height: 25px;
       text-align: center;
-    }
-
-    @media (max-width: $mobile-size-max) {
-      padding: 34px 30px 40px;
     }
   }
 }
