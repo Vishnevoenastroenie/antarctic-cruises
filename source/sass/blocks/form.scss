@@ -16,10 +16,11 @@
 
   @media (max-width: $tablet-size-max) {
     margin-left: 0;
+    padding-bottom: 0;
   }
 
   @media (max-width: $mobile-size-max) {
-    padding: 34px 30px 40px;
+    padding: 34px 30px 16px;
   }
 
   input {
@@ -28,6 +29,10 @@
     padding-left: 13px;
 
     line-height: 21px;
+
+    &:not(:last-child) {
+      min-height: 0;
+    }
 
     &:hover {
       outline: 2px solid $color-turquoise;
@@ -73,4 +78,5 @@
   color: $color-tangaroa;
 
   background-color: $color-alice-blue;
+  transform: translateY(-24px);
 }

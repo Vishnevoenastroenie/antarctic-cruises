@@ -50,10 +50,8 @@
 
 .products__list {
   display: grid;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
 
-  list-style-type: none;
   column-gap: 30px;
 
   grid-template-columns: repeat(4, 1fr);
@@ -74,100 +72,116 @@
   }
 }
 
+//Сам блок внутри карточки
 .products__description {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
   padding: 28px 25px 35px;
-  //overflow: auto;
+  overflow: auto;
 
-  font-size: 14px;
-  line-height: 20px;
+  color: $color-alice-blue;
 
-  dl {
-    min-height: 262px;
-    margin: 0;
+  background-color: $color-tangaroa;
+  transform: translateX(calc(-100% - 5px));
 
-    @media (max-width: $tablet-size-max) {
-      min-height: 360px;
-    }
+  transition: 0.4s cubic-bezier(0, 1, 0, 1) transform;
 
-    @media (max-width: 990px) {
-      min-height: 350px;
-    }
-
-    @media (max-width: 970px) {
-      min-height: 340px;
-    }
-
-    @media (max-width: 930px) {
-      min-height: 330px;
-    }
-
-    @media (max-width: 900px) {
-      min-height: 310px;
-    }
-
-    @media (max-width: 880px) {
-      min-height: 290px;
-    }
-
-    @media (max-width: 830px) {
-      min-height: 270px;
-    }
-
-    @media (max-width: 790px) {
-      min-height: 260px;
-    }
-
-    @media (max-width: $tablet-size-min) {
-      min-height: 241px;
-    }
-
-    @media (max-width: $mobile-size-max) {
-      height: auto;
-    }
+  @media (max-width: $tablet-size-max) {
+    padding: 28px 35px 35px;
   }
 
-  dt {
-    margin: 0;
-    margin-bottom: 2px;
-    padding-right: 0.1px;
-
-    font-weight: 500;
-    color: $color-alice-blue;
-  }
-
-  dd {
-    margin: 0;
-    margin-bottom: 10px;
-    padding-right: 0.1px;
-
-    color: $color-quartz;
+  @media (max-width: $mobile-size-max) {
+    padding: 30px 25px 35px;
   }
 }
 
+.products__item > .products__description {
+  display: none;
+}
+
+.products__item:hover > .products__description {
+  display: block;
+}
+
+//Всё описание, кроме заголовка в кавычках
+.products__description ul {
+  margin-bottom: 3px;
+
+  gap: 13px;
+}
+
+.products__description p {
+  margin: 0;
+}
+
+//Заголовок внутри карточки
+.products__description > p {
+  margin-bottom: 15px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+//Подзаголовки в списке внутри карточек
+.products__description li p:first-child {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+//Детали другого цвета и не такие насыщенные
+.products__description li p:not(:first-child) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: $color-quartz;
+}
+
 .products__item {
+  position: relative;
+
   display: grid;
   max-width: 260px;
-  height: 100%;
   min-height: 386px;
+  overflow: hidden;
+
+  cursor: pointer;
 
   grid-template-columns: 1fr;
   grid-template-rows: 80.57% 19.43%;
 
-  @media (max-width: 1200px) {
-    min-height: 395px;
-  }
+  h3 {
+    position: absolute;
+    z-index: 1;
 
-  @media (max-width: 1150px) {
-    min-height: 400px;
-  }
+    display: flex;
+    align-items: flex-end;
+    width: max-content;
+    //width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 22px 30px;
 
-  @media (max-width: 1100px) {
-    min-height: 410px;
-  }
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-alice-blue;
 
-  @media (max-width: 1050px) {
-    min-height: 425px;
+    @media (max-width: $tablet-size-max) {
+      padding: 27px 35px;
+    }
+
+    @media (max-width: $mobile-size-max) {
+      padding: 18px 25px;
+    }
   }
 
   @media (max-width: $tablet-size-max) {
@@ -185,204 +199,46 @@
 
     aspect-ratio: 1 / 1.42;
   }
-
-  h3 {
-    //position: absolute;
-    z-index: 5;
-
-    align-self: flex-end; //Для грида не работает
-    margin: 0;
-    padding: 1px 30px 23px;
-
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    color: $color-alice-blue;
-
-    @media (max-width: $tablet-size-max) {
-      padding: 0;
-    }
-  }
-
-  &:hover,
-  &:focus,
-  &:focus-within {
-    background-color: $color-tangaroa;
-
-    h3 {
-      align-self: self-end;
-      width: max-content;
-      min-height: 13px;
-      margin: 0;
-      margin-bottom: 15px;
-      padding: 0;
-      padding-top: 16px;
-
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 150%;
-      color: $color-alice-blue;
-
-      @media (max-width: $tablet-size-max) {
-        padding: 0;
-      }
-    }
-
-    .products__image {
-      display: none;
-    }
-
-    .products__description {
-      display: block;
-      height: 310px;
-      padding: 13px 20px 0 25px;
-
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-
-      @media (max-width: 1200px) {
-        padding: 28px 20px 30px;
-      }
-
-      @media (max-width: 1100px) {
-        padding: 28px 13px 30px;
-      }
-
-      @media (max-width: $tablet-size-max) {
-        padding: 28px 15px 30px;
-      }
-
-      @media (max-width: $tablet-size-min) {
-        padding-left: 35px;
-      }
-
-      @media (max-width: $mobile-size-max) {
-        padding-left: 25px;
-      }
-    }
-  }
 }
 
 .products__image {
-  grid-column: 1 / 2;
-  grid-row: 1 / -1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  img {
     width: 100%;
     height: 100%;
 
-    @media (max-width: $mobile-size-max) {
-      object-fit: cover;
-      object-position: 50% 100%;
-    }
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
   }
 }
 
-.products__btn {
-  position: absolute;
+.products__image img {
+  z-index: -2;
 
-  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.products__btn {
+  display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 210px;
+  width: 100%;
   min-height: 40px;
   margin-top: auto;
-  margin-bottom: auto;
+  padding: 10px;
 
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
-  text-align: center;
-  color: $color-tangaroa;
 
   background-color: $color-alice-blue;
 
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-
-  @media (max-width: 1200px) {
-    min-width: 200px;
-  }
-
-  @media (max-width: 1150px) {
-    min-width: 180px;
-  }
-
-  @media (max-width: $tablet-size-max) {
-    min-width: 400px;
-  }
-
-  @media (max-width: 1015px) {
-    min-width: 380px;
-  }
-
-  @media (max-width: 1000px) {
-    min-width: 370px;
-  }
-
-  @media (max-width: 950px) {
-    min-width: 360px;
-  }
-
-  @media (max-width: 930px) {
-    min-width: 350px;
-  }
-
-  @media (max-width: 920px) {
-    min-width: 340px;
-  }
-
-  @media (max-width: 900px) {
-    min-width: 330px;
-  }
-
-  @media (max-width: 880px) {
-    min-width: 320px;
-  }
-
-  @media (max-width: 850px) {
-    min-width: 310px;
-  }
-
-  @media (max-width: 830px) {
-    min-width: 300px;
-  }
-
-  @media (max-width: 810px) {
-    min-width: 290px;
-  }
-
-  @media (max-width: 790px) {
-    min-width: 280px;
-  }
-
-  @media (max-width: $tablet-size-min) {
-    min-width: 239px;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  @media (max-width: $mobile-size-max) {
-    width: 65%;
-    margin: 0 25px;
-  }
-
-  @media (max-width: 370px) {
-    width: 60%;
-    margin: 0;
-  }
-
-  @media (max-width: 350px) {
-    width: 45%;
-    margin: 0;
-  }
-
-  @media (max-width: 335px) {
-    min-width: 220px;
-    max-width: 220px;
-    margin: 0;
-    padding-right: 0;
-  }
 
   &:focus,
   &:hover {
