@@ -73,66 +73,52 @@
 }
 
 //Сам блок внутри карточки
-//.products__description {
-//position: absolute;
-//top: 0;
-//left: 0;
-//z-index: 2;
+.products__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 
-//display: flex;
-//flex-direction: column;
-//width: 100%;
-//height: 100%;
-//padding: 28px 25px 35px;
-//overflow: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 28px 25px 35px 24px;
+  overflow: auto;
 
-//color: $color-alice-blue;
+  color: $color-alice-blue;
 
-//background-color: $color-tangaroa;
-//transform: translateX(calc(-100% - 5px));
+  background-color: $color-tangaroa;
 
-//transition: 0.4s cubic-bezier(0, 1, 0, 1) transform;
+  @media (max-width: $tablet-size-max) {
+    padding: 28px 35px 35px;
+  }
 
-//@media (max-width: $tablet-size-max) {
-//padding: 28px 35px 35px;
-//}
-
-//@media (max-width: $mobile-size-max) {
-//padding: 30px 25px 35px;
-//}
-//}
+  @media (max-width: $mobile-size-max) {
+    padding: 30px 25px 35px;
+  }
+}
 
 .products__item > .products__description {
   display: none;
 }
 
 .products__item:hover > .products__description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-
   display: block;
-  //display: flex;
-  //flex-direction: column;
-  width: 100%;
-  height: 100%;
-  padding: 28px 25px 35px;
-  overflow: auto;
 
-  color: $color-alice-blue;
-
-  background-color: $color-tangaroa;
-  transform: translateX(calc(-100% - 5px));
+  transform: translateX(1px);
 
   transition: 0.4s cubic-bezier(0, 1, 0, 1) transform;
 }
 
 //Всё описание, кроме заголовка в кавычках
 .products__description ul {
+  min-height: 238px;
   margin-bottom: 3px;
+}
 
-  gap: 13px;
+.products__description li {
+  margin-bottom: 13px;
 }
 
 .products__description p {
@@ -166,15 +152,11 @@
 .products__item {
   position: relative;
 
-  display: grid;
   max-width: 260px;
   min-height: 386px;
   overflow: hidden;
 
   cursor: pointer;
-
-  grid-template-columns: 1fr;
-  grid-template-rows: 80.57% 19.43%;
 
   h3 {
     position: absolute;
@@ -252,11 +234,9 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
+  color: $color-tangaroa;
 
   background-color: $color-alice-blue;
-
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
 
   &:focus,
   &:hover {

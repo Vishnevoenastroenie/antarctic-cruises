@@ -60,7 +60,21 @@
   display: none;
 
   @media (max-width: $mobile-size-max) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+
     display: block;
+    width: 100%;
+    height: 100%;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: 0.1s ease $color-alice-blue;
+
+    pointer-events: none;
   }
 }
 
@@ -82,10 +96,12 @@
     z-index: 9999;
 
     max-width: 0;
-    //background-color: $color-alice-blue;
-    //color: $color-tangaroa;
     height: 100vh;
     overflow: hidden;
+
+    color: $color-tangaroa;
+
+    background-color: $color-alice-blue;
   }
 }
 
@@ -215,8 +231,6 @@
   & span {
     width: 0;
 
-    background-color: $color-tangaroa;
-
     &::before,
     &::after {
       left: -3px;
@@ -246,8 +260,9 @@
   }
 
   @media (max-width: $mobile-size-max) {
+    display: flex;
     flex-direction: column;
-    padding: 0 30px 0 15px;
+    padding-right: 15px;
 
     column-gap: 0;
 
@@ -284,5 +299,8 @@
 
     font-size: 18px;
     line-height: 20px;
+    color: $color-tangaroa;
+
+    transition: linear 0.2s opacity;
   }
 }
