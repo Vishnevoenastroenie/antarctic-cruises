@@ -1,1 +1,72 @@
 @import "../variables";
+
+.map {
+  position: relative;
+
+  overflow: hidden;
+
+  background: width 100%;
+  background-color: $color-madang;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 1024px) {
+    background: width 100%;
+    background-image: url("./../img/map-underlay-desktop.jpg");
+
+    @supports (background-image: url("./../img/map-underlay-desktop.webp")) {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-desktop.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-desktop@2x.jpg");
+
+      @supports (background-image: url("./../img/map-underlay-desktop@2x.webp")) {
+        background: width 100%;
+        background-image: url("./../img/map-underlay-desktop@2x.webp");
+      }
+    }
+  }
+
+  @media (max-width: $tablet-size-max) {
+    background: width 100%;
+    background-image: url("./../img/map-underlay-tablet.jpg");
+
+    @supports (background-image: url("./../img/map-underlay-tablet.webp")) {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-tablet.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-tablet@2x.jpg");
+
+      @supports (background-image: url("./../img/map-underlay-tablet@2x.webp")) {
+        background: width 100%;
+        background-image: url("./../img/map-underlay-tablet@2x.webp");
+      }
+    }
+  }
+
+  @media (max-width: $mobile-size-max) {
+    background: width 100%;
+    background-image: url("./../img/map-underlay-mobile.jpg");
+
+    @supports (background-image: url("./../img/map-underlay-mobile.webp")) {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-mobile.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-mobile@2x.jpg");
+
+      @supports (background-image: url("./../img/map-underlay-mobile@2x.webp")) {
+        background: width 100%;
+        background-image: url("./../img/map-underlay-mobile@2x.webp");
+      }
+    }
+  }
+}

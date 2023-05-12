@@ -2847,6 +2847,87 @@ button,
   }
 }
 
+.map {
+  position: relative;
+  overflow: hidden;
+  background: width 100%;
+  background-color: #b6d7a8;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  .map {
+    background: width 100%;
+    background-image: url("./../img/map-underlay-desktop.jpg");
+  }
+  @supports (background-image: url("./../img/map-underlay-desktop.webp")) {
+    .map {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-desktop.webp");
+    }
+  }
+}
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1024px) and (-o-min-device-pixel-ratio: 3/2), (min-width: 1024px) and (min-resolution: 144dpi), (min-width: 1024px) and (min-resolution: 1.5dppx) {
+  .map {
+    background: width 100%;
+    background-image: url("./../img/map-underlay-desktop@2x.jpg");
+  }
+  @supports (background-image: url("./../img/map-underlay-desktop@2x.webp")) {
+    .map {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-desktop@2x.webp");
+    }
+  }
+}
+@media (max-width: 1023px) {
+  .map {
+    background: width 100%;
+    background-image: url("./../img/map-underlay-tablet.jpg");
+  }
+  @supports (background-image: url("./../img/map-underlay-tablet.webp")) {
+    .map {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-tablet.webp");
+    }
+  }
+}
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .map {
+    background: width 100%;
+    background-image: url("./../img/map-underlay-tablet@2x.jpg");
+  }
+  @supports (background-image: url("./../img/map-underlay-tablet@2x.webp")) {
+    .map {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-tablet@2x.webp");
+    }
+  }
+}
+@media (max-width: 767px) {
+  .map {
+    background: width 100%;
+    background-image: url("./../img/map-underlay-mobile.jpg");
+  }
+  @supports (background-image: url("./../img/map-underlay-mobile.webp")) {
+    .map {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-mobile.webp");
+    }
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .map {
+    background: width 100%;
+    background-image: url("./../img/map-underlay-mobile@2x.jpg");
+  }
+  @supports (background-image: url("./../img/map-underlay-mobile@2x.webp")) {
+    .map {
+      background: width 100%;
+      background-image: url("./../img/map-underlay-mobile@2x.webp");
+    }
+  }
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
