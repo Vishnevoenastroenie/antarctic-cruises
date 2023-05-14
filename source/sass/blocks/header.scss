@@ -138,7 +138,7 @@
   }
 }
 
-.header__top.is-open .header__overlap {
+.header.is-open .header__overlap {
   pointer-events: none;
 
   @media (max-width: $mobile-size-max) {

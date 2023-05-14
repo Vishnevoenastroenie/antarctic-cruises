@@ -1316,11 +1316,11 @@ button,
   }
 }
 
-.header__top.is-open .header__overlap {
+.header.is-open .header__overlap {
   pointer-events: none;
 }
 @media (max-width: 767px) {
-  .header__top.is-open .header__overlap {
+  .header.is-open .header__overlap {
     background-color: rgba(0, 43, 102, 0.5);
     pointer-events: all;
   }
@@ -2782,6 +2782,12 @@ button,
   line-height: 20px;
   color: #f9fbfd;
 }
+.footer__navigation-link:hover, .footer__navigation-link:focus {
+  color: #6fa8dc;
+}
+.footer__navigation-link:active {
+  color: #45818e;
+}
 @media (max-width: 1023px) {
   .footer__navigation-link {
     font-size: 12px;
@@ -2839,6 +2845,12 @@ button,
   min-width: 25px;
   min-height: 25px;
   color: #f9fbfd;
+}
+.footer__social-link:hover, .footer__social-link:focus {
+  color: #6fa8dc;
+}
+.footer__social-link:active {
+  color: #45818e;
 }
 @media (max-width: 1023px) {
   .footer__social-link svg {

@@ -127,6 +127,15 @@
   line-height: 20px;
   color: $color-alice-blue;
 
+  &:hover,
+  &:focus {
+    color: $color-jordy-blue;
+  }
+
+  &:active {
+    color: $color-jelly-bean;
+  }
+
   @media (max-width: $tablet-size-max) {
     font-size: 12px;
     line-height: 15px;
@@ -169,6 +178,15 @@
   min-height: 25px;
 
   color: $color-alice-blue;
+
+  &:hover,
+  &:focus {
+    color: $color-jordy-blue;
+  }
+
+  &:active {
+    color: $color-jelly-bean;
+  }
 
   @media (max-width: $tablet-size-max) {
     & svg {
