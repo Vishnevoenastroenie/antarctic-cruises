@@ -81,10 +81,11 @@
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
-  padding: 28px 25px 35px 24px;
-  overflow: auto;
+  min-height: 386px;
+  padding: 28px 20px 35px 24px;
 
   color: $color-alice-blue;
 
@@ -104,7 +105,9 @@
 }
 
 .products__item:hover > .products__description {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   transform: translateX(1px);
 
@@ -114,11 +117,37 @@
 //Всё описание, кроме заголовка в кавычках
 .products__description ul {
   min-height: 238px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
+  overflow: auto;
+
+  scrollbar-width: none;
+
+  /* stylelint-disable */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+  /* stylelint-enable */
 }
 
 .products__description li {
   margin-bottom: 13px;
+
+  @media (max-width: 1350px) {
+    margin-bottom: 12px;
+  }
+
+  @media (max-width: 1300px) {
+    margin-bottom: 11px;
+  }
+
+  @media (max-width: 1250px) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .products__description p {
@@ -165,7 +194,6 @@
     display: flex;
     align-items: flex-end;
     width: max-content;
-    //width: 100%;
     height: 100%;
     margin: 0;
     padding: 22px 30px;
@@ -188,14 +216,12 @@
     width: 100%;
     max-width: none;
     height: auto;
-    min-height: 386px;
 
     aspect-ratio: 1 / 1.25;
   }
 
   @media (max-width: $mobile-size-max) {
     width: 100%;
-    min-height: 270px;
 
     aspect-ratio: 1 / 1.42;
   }
@@ -229,7 +255,7 @@
   width: 100%;
   min-height: 40px;
   margin-top: auto;
-  padding: 10px;
+  padding: 10px 17px 10px 10px;
 
   font-weight: 600;
   font-size: 14px;
@@ -248,5 +274,9 @@
 
   &:active {
     opacity: 1;
+  }
+
+  @media (max-width: $tablet-size-max) {
+    padding: 10px;
   }
 }
