@@ -2035,7 +2035,7 @@ button,
     margin: 0 auto;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 33px;
+    row-gap: 30px;
   }
 }
 
@@ -2130,6 +2130,11 @@ button,
 @media (max-width: 1200px) {
   .products__description li {
     margin-bottom: 9px;
+  }
+}
+@media (max-width: 1023px) {
+  .products__description li {
+    margin-bottom: 13px;
   }
 }
 

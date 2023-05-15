@@ -68,7 +68,7 @@
     margin: 0 auto;
 
     grid-template-columns: 1fr;
-    row-gap: 33px;
+    row-gap: 30px;
   }
 }
 
@@ -147,6 +147,10 @@
 
   @media (max-width: 1200px) {
     margin-bottom: 9px;
+  }
+
+  @media (max-width: $tablet-size-max) {
+    margin-bottom: 13px;
   }
 }
 
