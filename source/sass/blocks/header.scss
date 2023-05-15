@@ -63,7 +63,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9998;
+    z-index: 10;
 
     display: block;
     width: 100%;
@@ -93,7 +93,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 20;
 
     max-width: 0;
     height: 100vh;
@@ -138,7 +138,7 @@
   }
 }
 
-.header.is-open .header__overlap {
+.header-container.is-open .header__overlap {
   pointer-events: none;
 
   @media (max-width: $mobile-size-max) {
@@ -148,13 +148,7 @@
   }
 }
 
-.header > .logo {
-  display: flex;
-
-  color: $color-alice-blue;
-}
-
-.header.is-open > .logo {
+.header__container.is-open > .header__logo-link {
   @media (max-width: $mobile-size-max) {
     position: relative;
 
@@ -163,13 +157,13 @@
 }
 
 .header__button {
-  z-index: 10000;
+  z-index: 30;
 
   display: none;
   flex-shrink: 0;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   padding: 0;
 
   background-color: transparent;
@@ -179,57 +173,51 @@
   @media (max-width: $mobile-size-max) {
     display: flex;
 
-    color: $color-alice-blue;
+    & span {
+      position: relative;
+      left: 50%;
 
-    &:hover,
-    &:focus {
-      color: $color-jordy-blue;
-    }
-
-    &:active {
-      color: $color-jelly-bean;
-    }
-  }
-
-  & span {
-    position: relative;
-    top: 0;
-    left: 69%;
-
-    display: flex;
-    width: 24px;
-    height: 2px;
-
-    background-color: $color-alice-blue;
-    transform: translate(-50%);
-
-    transition: 0.4s cubic-bezier(0, 2, 1, 1) transform, 0.4s cubic-bezier(0.5, 0, 0.5, 1.5) width, 0.1s ease background-color, 0.4s cubic-bezier(0, 2, 1, 1);
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-
+      display: flex;
       width: 24px;
       height: 2px;
 
-      background-color: inherit;
-    }
+      background-color: $color-alice-blue;
+      transform: translate(-50%);
 
-    &::before {
-      transform: translateY(6px);
-    }
+      transition: 0.4s cubic-bezier(0, 2, 1, 1) transform, 0.4s cubic-bezier(0.5, 0, 0.5, 1.5) width, 0.1s ease background-color, 0.4s cubic-bezier(0, 2, 1, 1);
 
-    &::after {
-      transform: translateY(-6px);
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+
+        width: 24px;
+        height: 2px;
+
+        background-color: inherit;
+
+        transition: 0.4s cubic-bezier(0, 2, 1, 1) transform, 0.4s cubic-bezier(0, 2, 1, 1);
+      }
+
+      &::before {
+        transform: translateY(6px);
+      }
+
+      &::after {
+        transform: translateY(-6px);
+      }
     }
   }
 }
 
-.header.is-open .header__button {
-  & span {
+.header__container.is-open .header__button span {
+  @media (max-width: $mobile-size-max) {
+    z-index: 50;
+
     width: 0;
+
+    background-color: $color-tangaroa;
 
     &::before,
     &::after {
