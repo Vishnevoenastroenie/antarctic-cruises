@@ -46,6 +46,16 @@
 
       gap: 5px;
 
+      &:hover {
+        outline: 2px solid $color-turquoise;
+        outline-offset: 2px;
+      }
+
+      &:focus {
+        outline: 2px solid $color-jordy-blue;
+        outline-offset: 2px;
+      }
+
       @media (max-width: $mobile-size-max) {
         min-width: 190px;
 

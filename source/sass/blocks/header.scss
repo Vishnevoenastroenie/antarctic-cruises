@@ -108,6 +108,8 @@
 .is-open .header__navigation {
   @media (max-width: $mobile-size-max) {
     max-width: 285px;
+    max-height: 100vh;
+    overflow-y: scroll;
   }
 }
 
@@ -138,10 +140,12 @@
   }
 }
 
-.header-container.is-open .header__overlap {
+.header__container.is-open .header__overlap {
   pointer-events: none;
 
   @media (max-width: $mobile-size-max) {
+    height: 100vh;
+
     background-color: rgba(0, 43, 102, 0.5);
 
     pointer-events: all;

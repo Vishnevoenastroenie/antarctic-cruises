@@ -18,7 +18,7 @@
   @media (max-width: $mobile-size-max) {
     display: flex;
     flex-direction: column;
-    padding: 58px 15px 62px;
+    padding: 58px 15px 46px;
 
     row-gap: 40px;
   }
@@ -54,57 +54,62 @@
 
 .contacts__description {
   margin-left: 60px;
+  padding-top: 20px;
+
+  color: $color-tangaroa;
 
   @media (max-width: $tablet-size-max) {
     margin: 0;
+    padding: 0;
+    padding-top: 15px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    order: -1;
+    padding: 0;
   }
 }
 
 .contacts h3 {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 30px;
 
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
+  color: $color-tangaroa;
 
   @media (max-width: $tablet-size-max) {
-    margin-bottom: 27px;
+    margin-bottom: 23px;
   }
 }
 
-.contacts ul {
+.contacts__link {
   display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 21px;
 
-  list-style: none;
-
-  gap: 22px;
-
-  @media (max-width: $tablet-size-max) {
-    gap: 20px;
-  }
-}
-
-.contacts li {
-  display: flex;
-
-  gap: 10px;
-}
-
-.contacts a {
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
+  color: $color-tangaroa;
+
+  @media (max-width: $mobile-size-max) {
+    margin-bottom: 20px;
+  }
 }
 
-.contacts li svg {
-  flex-shrink: 0;
-  margin-top: 3px;
+.contacts p {
+  margin: 0;
 
   @media (max-width: $tablet-size-max) {
-    margin-top: 3px;
+    max-width: 255px;
   }
+}
+
+.contacts svg {
+  flex-shrink: 0;
+  margin-right: 10px;
 }
