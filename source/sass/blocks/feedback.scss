@@ -74,10 +74,68 @@
 .feedback__container {
   display: grid;
   align-items: center;
+  margin: 0 auto;
   padding: 50px 163px 26px;
 
   gap: 40px;
   grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 6000px) {
+    display: grid;
+    align-items: center;
+    padding: 50px 718px 26px;
+
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 2500px) {
+    padding: 50px 630px 26px;
+  }
+
+  @media (max-width: 2400px) {
+    padding: 50px 600px 26px;
+  }
+
+  @media (max-width: 2300px) {
+    padding: 50px 550px 26px;
+  }
+
+  @media (max-width: 2200px) {
+    padding: 50px 490px 26px;
+  }
+
+  @media (max-width: 2100px) {
+    padding: 50px 400px 26px;
+  }
+
+  @media (max-width: 2000px) {
+    padding: 50px 390px 26px;
+  }
+
+  @media (max-width: 1900px) {
+    padding: 50px 350px 26px;
+  }
+
+  @media (max-width: 1800px) {
+    padding: 50px 300px 26px;
+  }
+
+  @media (max-width: 1700px) {
+    padding: 50px 230px 26px;
+  }
+
+  @media (max-width: 1600px) {
+    padding: 50px 190px 26px;
+  }
+
+  @media (max-width: 1500px) {
+    padding: 50px 170px 26px;
+  }
+
+  @media (max-width: 1366px) {
+    padding: 50px 163px 26px;
+  }
 
   @media (max-width: $tablet-size-max) {
     display: flex;
