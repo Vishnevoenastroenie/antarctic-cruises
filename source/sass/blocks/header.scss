@@ -86,7 +86,7 @@
   max-width: 600px;
 
   @media (max-width: $tablet-size-max) {
-    max-width: 500px;
+    max-width: 504px;
   }
 
   @media (max-width: $mobile-size-max) {
@@ -248,7 +248,7 @@
   row-gap: 12px;
 
   @media (max-width: $tablet-size-max) {
-    column-gap: 21px;
+    column-gap: 23px;
   }
 
   @media (max-width: $mobile-size-max) {
