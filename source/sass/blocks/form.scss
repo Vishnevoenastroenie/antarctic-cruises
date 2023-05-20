@@ -7,8 +7,7 @@
   max-width: 403px;
   min-height: 455px;
   margin-left: auto;
-  padding: 50px;
-  padding-top: 43px;
+  padding: 43px 50px 26px;
 
   color: $color-alice-blue;
 
@@ -53,6 +52,16 @@
     font-size: 18px;
     line-height: 150%;
 
+    br {
+      display: none;
+    }
+
+    @media (max-width: 320px) {
+      br {
+        display: inline;
+      }
+    }
+
     @media (max-width: $mobile-size-max) {
       padding: 0;
 
@@ -60,10 +69,14 @@
       line-height: 25px;
       text-align: center;
     }
+
+    @media (max-width: 320px) {
+      max-width: 226px;
+    }
   }
 }
 
-.feedback__form-button[type="submit"] {
+.feedback__form-button {
   display: flex;
   justify-content: center;
   align-items: center;
