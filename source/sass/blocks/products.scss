@@ -86,10 +86,20 @@
   height: 100%;
   min-height: 386px;
   padding: 28px 20px 35px 24px;
+  overflow: auto;
 
   color: $color-alice-blue;
 
   background-color: $color-tangaroa;
+
+  scrollbar-width: none;
+
+  /* stylelint-disable */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+  /* stylelint-enable */
 
   @media (max-width: $tablet-size-max) {
     padding: 28px 35px 35px;
@@ -230,6 +240,17 @@
 }
 
 .products__image {
+  overflow: auto;
+
+  scrollbar-width: none;
+
+  /* stylelint-disable */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+  /* stylelint-enable */
+
   &::after {
     content: "";
     position: absolute;
@@ -262,6 +283,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
   color: $color-tangaroa;
 
   background-color: $color-alice-blue;

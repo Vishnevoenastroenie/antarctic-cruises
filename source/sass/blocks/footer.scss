@@ -76,27 +76,71 @@
   row-gap: 12px;
 
   @media (max-width: 1350px) {
-    transform: translateX(-160px);
+    transform: translateX(-163px);
+  }
+
+  @media (max-width: 1330px) {
+    transform: translateX(-140px);
   }
 
   @media (max-width: 1300px) {
+    transform: translateX(-135px);
+  }
+
+  @media (max-width: 1290px) {
     transform: translateX(-130px);
   }
 
+  @media (max-width: 1270px) {
+    transform: translateX(-116px);
+  }
+
   @media (max-width: 1250px) {
-    transform: translateX(-110px);
+    transform: translateX(-112px);
+  }
+
+  @media (max-width: 1230px) {
+    transform: translateX(-90px);
   }
 
   @media (max-width: 1200px) {
-    transform: translateX(-70px);
+    transform: translateX(-60px);
+  }
+
+  @media (max-width: 1180px) {
+    transform: translateX(-45px);
   }
 
   @media (max-width: 1150px) {
-    transform: translateX(-50px);
+    transform: translateX(-30px);
   }
 
   @media (max-width: 1130px) {
+    transform: translateX(-27px);
+  }
+
+  @media (max-width: 1120px) {
+    transform: translateX(-18px);
+  }
+
+  @media (max-width: 1110px) {
+    transform: translateX(-13px);
+  }
+
+  @media (max-width: 1090px) {
     transform: translateX(-5px);
+  }
+
+  @media (max-width: 1070px) {
+    transform: translateX(5px);
+  }
+
+  @media (max-width: 1050px) {
+    transform: translateX(10px);
+  }
+
+  @media (max-width: 1040px) {
+    transform: translateX(20px);
   }
 
   @media (max-width: $tablet-size-max) {
