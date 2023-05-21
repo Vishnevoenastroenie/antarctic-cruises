@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Круиз в Антарктику, на корабле до Антарктиды, увидеть пингвинов, подплыть к киту, путешествие на край Земли">
+  <meta name="description" content="Туристический проект - Круизы в Антарктику">
+  <title>Круизы в Антарктику</title>
+  <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="img/favicon/favicon.png">
+  <link rel="icon" href="img/favicon/svg-favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__container" data-header>
+          <a class="header__logo-link oll-links" href="index.html">
+            <picture class="header__logo-picture">
+              <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+              <source media="(max-width: 1023px)" srcset="img/svg/logo-tablet.svg">
+              <img src="img/svg/logo-desktop.svg" width="70" height="38" alt="Логотип сайта Круизы в Антарктику в виде заснеженного горного хребта.">
+            </picture>
+          </a>
+          <nav class="header__navigation">
+            <div class="header__navigation-wrapper"><span class="logo disabled">
+                <svg width="42" height="22" viewbox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.54211 18.0197L8.80358 7.26166L11.0637 8.42713L16.4415 0L19.7928 3.8551L21.0399 2.86887L25.872 8.78584L29.3013 4.84111L38.8875 18.0197L29.652 6.81358L28.249 11.5202L29.535 15.2407L21.2736 4.25849L21.1842 8.00563L25.872 18.0197L17.1038 2.51017L19.6369 10.8926L16.0909 2.73432L14.1424 8.15829L14.5319 4.61695L9.66076 17.3922L10.2452 12.0132L8.21887 9.86169L0.54211 18.0197Z" fill="#011C40" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M41.6649 19.7024C28.5846 9.51096 8.22544 23.522 0 18.1188C9.04339 25.7756 30.1812 12.832 41.6649 19.7024Z" fill="#011C40" />
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M42 20.5038C31.7374 14.1941 16.4741 22.9749 8.65134 20.9415C17.128 24.9111 32.9089 16.1156 42 20.5038Z" fill="#011C40" />
+                </svg></span>
+              <ul class="header__navigation-list  list-reset">
+                <li>
+                  <a class="header__navigation-link oll-links" data-close-menu href="#advantages">
+                    Преимущества
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-link oll-links" data-close-menu href="#">
+                    Направления
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-link oll-links" data-close-menu href="#products">
+                    Ближайшие круизы
+                  </a>
+                </li>
+                <li>
+                  <a class="header__navigation-link oll-links" data-close-menu href="#contacts">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header__overlap" data-close-menu></div>
+          <button class="header__button" data-burger aria-label="Открыть менюю. / Закрыть меню."><span></span></button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-block">
+        <div class="main-block__container">
+          <div class="main-block__image">
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/main-block-mobile.webp 1x, img/main-block-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/main-block-tablet.webp 1x, img/main-block-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-block.webp 1x, img/main-block@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="img/main-block-mobile.jpg 1x, img/main-block-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="img/main-block-tablet.jpg 1x, img/main-block-tablet@2x.jpg 2x">
+              <img src="img/main-block.jpg" srcset="img/main-block@2x 2x" width="1366" height="650" alt="Панорамный вид на ледники.">
+            </picture>
+          </div>
+          <div class="main-block__description">
+            <h1>Круизы в&nbsp;Антарктику</h1>
+            <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
+          </div>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="container">
+          <div class="promo__container">
+            <div class="promo__description">
+              <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
+              <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+            </div>
+            <div class="promo__image">
+              <picture class="promo__picture">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/promo-mobile.webp 1x, img/promo-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/promo-tablet.webp 1x, img/promo-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/promo-desktop.webp 1x, img/promo-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/promo-mobile.jpg 1x, img/promo-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="img/promo-tablet.jpg 1x, img/promo-tablet@2x.jpg 2x">
+                <img src="img/promo-desktop.jpg" srcset="img/promo-desktop@2x.jpg 2x" width="560" height="301" alt="Улыбающиеся пингвины." loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="advantages" id="advantages">
+        <div class="advantages__container container">
+          <h2>Преимущества</h2>
+          <ul class="advantages__list list-reset">
+            <li class="advantages__item">
+              <svg class="advantages__icon" aria-hidden="true" focusable="false" width="27" height="44" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#icon-liner"></use>
+              </svg>
+              <h3>Небольшой круизный&nbsp;лайнер</h3>
+              <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon" aria-hidden="true" focusable="false" width="38" height="44" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#icon-all-inclusive"></use>
+              </svg>
+              <h3>Система все&nbsp;включено</h3>
+              <p>Все наши круизы работают по&nbsp;системе "Все Включено". Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+            </li>
+            <li class="advantages__item">
+              <svg class="advantages__icon" aria-hidden="true" focusable="false" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#icon-zodiac"></use>
+              </svg>
+              <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac c&nbsp;опытными экскурсоводами.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="products" id="products">
+        <div class="products__container container">
+          <h2>Ближайшие круизы</h2>
+          <ul class="products__list list-reset">
+            <li class="products__item" tabindex="0">
+              <div class="products__description">
+                <p>Круиз “Астория”</p>
+                <ul class="list-reset">
+                  <li>
+                    <p>Маршрут</p>
+                    <p>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида</p>
+                  </li>
+                  <li>
+                    <p>Порт отправления</p>
+                    <p>Ушуайя</p>
+                  </li>
+                  <li>
+                    <p>Продолжительность</p>
+                    <p>11&nbsp;дней</p>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <p>от&nbsp;11500&nbsp;$</p>
+                  </li>
+                </ul><a class="products__btn btn" href="#">Забронировать</a>
+              </div>
+              <div class="products__image">
+                <h3>Круиз “Астория”</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/astoria-mobile.webp 1x, img/products/astoria-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/astoria-tablet.webp 1x, img/products/astoria-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/astoria-desktop.webp 1x, img/products/astoria-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/astoria-mobile.png 1x, img/products/astoria-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/astoria-tablet.png 1x, img/products/astoria-tablet@2x.png 2x">
+                  <img src="img/products/astoria-desktop.png" srcset="img/products/astoria-desktop@2x.png 2x" width="260" height="386" alt="Круиз Астория." loading="lazy">
+                </picture>
+              </div>
+            </li>
+            <li class="products__item" tabindex="0">
+              <div class="products__description">
+                <p>Круиз “Элайн”</p>
+                <ul class="list-reset">
+                  <li>
+                    <p>Маршрут</p>
+                    <p>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</p>
+                  </li>
+                  <li>
+                    <p>Порт отправления</p>
+                    <p>Буэнос-Айрес</p>
+                  </li>
+                  <li>
+                    <p>Продолжительность</p>
+                    <p>20&nbsp;дней</p>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <p>от&nbsp;14500&nbsp;$</p>
+                  </li>
+                </ul><a class="products__btn btn" href="#">Забронировать</a>
+              </div>
+              <div class="products__image">
+                <h3>Круиз “Элайн”</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/aurora-mobile.webp 1x, img/products/aurora-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/aurora-tablet.webp 1x, img/products/aurora-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/aurora-desktop.webp 1x, img/products/aurora-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/aurora-mobile.png 1x, img/products/aurora-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/aurora-tablet.png 1x, img/products/aurora-tablet@2x.png 2x">
+                  <img src="img/products/aurora-desktop.png" srcset="img/products/aurora-desktop@2x.png 2x" width="260" height="386" alt="Круиз Элайн." loading="lazy">
+                </picture>
+              </div>
+            </li>
+            <li class="products__item" tabindex="0">
+              <div class="products__description">
+                <p>Круиз “Атлантис”</p>
+                <ul class="list-reset">
+                  <li>
+                    <p>Маршрут</p>
+                    <p>Аргентина&nbsp;&mdash; Южная Георгия и&nbsp;Южные Сандвичевы Острова&nbsp;&mdash; Антарктида</p>
+                  </li>
+                  <li>
+                    <p>Порт отправления</p>
+                    <p>Ушуайя</p>
+                  </li>
+                  <li>
+                    <p>Продолжительность</p>
+                    <p>15&nbsp;дней</p>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <p>от&nbsp;14500&nbsp;$</p>
+                  </li>
+                </ul><a class="products__btn btn" href="#">Забронировать</a>
+              </div>
+              <div class="products__image">
+                <h3>Круиз “Атлантис”</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/atlantis-mobile.webp 1x, img/products/atlantis-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/atlantis-tablet.webp 1x, img/products/atlantis-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/atlantis-desktop.webp 1x, img/products/atlantis-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/atlantis-mobile.png 1x, img/products/atlantis-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/atlantis-tablet.png 1x, img/products/atlantis-tablet@2x.png 2x">
+                  <img src="img/products/atlantis-desktop.png" srcset="img/products/atlantis-desktop@2x.png 2x" width="260" height="386" alt="Круиз Атлантис." loading="lazy">
+                </picture>
+              </div>
+            </li>
+            <li class="products__item" tabindex="0">
+              <div class="products__description">
+                <p>Круиз “Одиссей”</p>
+                <ul class="list-reset">
+                  <li>
+                    <p>Маршрут</p>
+                    <p>Чили&nbsp;&mdash; Антарктида</p>
+                  </li>
+                  <li>
+                    <p>Порт отправления</p>
+                    <p>Пунта-Аренас</p>
+                  </li>
+                  <li>
+                    <p>Продолжительность</p>
+                    <p>13&nbsp;дней</p>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <p>от&nbsp;9700&nbsp;$</p>
+                  </li>
+                </ul><a class="products__btn btn" href="#">Забронировать</a>
+              </div>
+              <div class="products__image">
+                <h3>Круиз “Одиссей”</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/odysseus-mobile.webp 1x, img/products/odysseus-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/odysseus-tablet.webp 1x, img/products/odysseus-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/odysseus-desktop.webp 1x, img/products/odysseus-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/odysseus-mobile.png 1x, img/products/odysseus-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/odysseus-tablet.png 1x, img/products/odysseus-tablet@2x.png 2x">
+                  <img src="img/products/odysseus-desktop.png" srcset="img/products/odysseus-desktop@2x.png 2x" width="260" height="386" alt="Круиз Одиссей." loading="lazy">
+                </picture>
+              </div>
+            </li>
+            <li class="products__item" tabindex="0">
+              <div class="products__description">
+                <p>Круиз “Олимпия”</p>
+                <ul class="list-reset">
+                  <li>
+                    <p>Маршрут</p>
+                    <p>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида</p>
+                  </li>
+                  <li>
+                    <p>Порт отправления</p>
+                    <p>Ушуайя</p>
+                  </li>
+                  <li>
+                    <p>Продолжительность</p>
+                    <p>21&nbsp;день</p>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <p>от&nbsp;18600&nbsp;$</p>
+                  </li>
+                </ul><a class="products__btn btn" href="#">Забронировать</a>
+              </div>
+              <div class="products__image">
+                <h3>Круиз “Олимпия”</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/olympia-mobile.webp 1x, img/products/olympia-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/olympia-tablet.webp 1x, img/products/olympia-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/olympia-desktop.webp 1x, img/products/olympia-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/olympia-mobile.png 1x, img/products/olympia-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/olympia-tablet.png 1x, img/products/olympia-tablet@2x.png 2x">
+                  <img src="img/products/olympia-desktop.png" srcset="img/products/olympia-desktop@2x.png 2x" width="260" height="386" alt="Круиз Олимпия." loading="lazy">
+                </picture>
+              </div>
+            </li>
+            <li class="products__item" tabindex="0">
+              <div class="products__description">
+                <p>Круиз “Аврора”</p>
+                <ul class="list-reset">
+                  <li>
+                    <p>Маршрут</p>
+                    <p>Аргентина&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</p>
+                  </li>
+                  <li>
+                    <p>Порт отправления</p>
+                    <p>Ушуайя</p>
+                  </li>
+                  <li>
+                    <p>Продолжительность</p>
+                    <p>14&nbsp;дней</p>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <p>от&nbsp;11700&nbsp;$</p>
+                  </li>
+                </ul><a class="products__btn btn" href="#">Забронировать</a>
+              </div>
+              <div class="products__image">
+                <h3>Круиз “Аврора”</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/aurora-mobile.webp 1x, img/products/aurora-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/aurora-tablet.webp 1x, img/products/aurora-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/aurora-desktop.webp 1x, img/products/aurora-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/aurora-mobile.png 1x, img/products/aurora-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/aurora-tablet.png 1x, img/products/aurora-tablet@2x.png 2x">
+                  <img src="img/products/aurora-desktop.png" srcset="img/products/aurora-desktop@2x.png 2x" width="260" height="386" alt="Круиз Аврора." loading="lazy">
+                </picture>
+              </div>
+            </li>
+            <li class="products__item" tabindex="0">
+              <div class="products__description">
+                <p>Круиз “Леонор”</p>
+                <ul class="list-reset">
+                  <li>
+                    <p>Маршрут</p>
+                    <p>Чили&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида&nbsp;&mdash; Аргентина</p>
+                  </li>
+                  <li>
+                    <p>Порт отправления</p>
+                    <p>Пунта-Аренас</p>
+                  </li>
+                  <li>
+                    <p>Продолжительность</p>
+                    <p>17&nbsp;дней</p>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <p>от&nbsp;12500&nbsp;$</p>
+                  </li>
+                </ul><a class="products__btn btn" href="#">Забронировать</a>
+              </div>
+              <div class="products__image">
+                <h3>Круиз “Леонор”</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/leonor-mobile.webp 1x, img/products/leonor-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/leonor-tablet.webp 1x, img/products/leonor-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/leonor-desktop.webp 1x, img/products/leonor-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/leonor-mobile.png 1x, img/products/leonor-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/leonor-tablet.png 1x, img/products/leonor-tablet@2x.png 2x">
+                  <img src="img/products/leonor-desktop.png" srcset="img/products/leonor-desktop@2x.png 2x" width="260" height="386" alt="Круиз Леонор." loading="lazy">
+                </picture>
+              </div>
+            </li>
+            <li class="products__item" tabindex="0">
+              <div class="products__description">
+                <p>Круиз “Минион&nbsp;&mdash;1”</p>
+                <ul class="list-reset">
+                  <li>
+                    <p>Маршрут</p>
+                    <p>Аргентина&nbsp;&mdash; Антарктида</p>
+                  </li>
+                  <li>
+                    <p>Порт отправления</p>
+                    <p>Ушуайя</p>
+                  </li>
+                  <li>
+                    <p>Продолжительность</p>
+                    <p>11&nbsp;дней</p>
+                  </li>
+                  <li>
+                    <p>Цена</p>
+                    <p>от&nbsp;12300&nbsp;$</p>
+                  </li>
+                </ul><a class="products__btn btn" href="#">Забронировать</a>
+              </div>
+              <div class="products__image">
+                <h3>Круиз “Минион&nbsp;&mdash;1”</h3>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/minion-mobile.webp 1x, img/products/minion-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/minion-tablet.webp 1x, img/products/minion-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/minion-desktop.webp 1x, img/products/minion-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/minion-mobile.png 1x, img/products/minion-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/minion-tablet.png 1x, img/products/minion-tablet@2x.png 2x">
+                  <img src="img/products/minion-desktop.png" srcset="img/products/minion-desktop@2x.png 2x" width="260" height="386" alt="Круиз Минион." loading="lazy">
+                </picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="feedback__container">
+          <div class="feedback__content">
+            <h2>Раннее бронирование</h2>
+            <p>Забронируйте тур<br> за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+          </div>
+          <div class="feedback__form" data-callback="base" data-form-validate data-message-base="Сообщение">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <h3>Оставьте заявку<br> и мы свяжемся с вами в ближайшее время</h3>
+              <div class="custom-input" data-limitation="name" data-required data-validate-type="text">
+                <input name="name" data-focus type="text" aria-label="Введите имя." autocomplete="off" required placeholder="Имя">
+              </div>
+              <div class="custom-input" data-required data-validate-type="phone">
+                <input name="tel" type="tel" aria-label="Введите номер телефона." autocomplete="off" required placeholder="Телефон">
+              </div>
+              <div class="custom-input" data-required data-validate-type="email">
+                <input name="email" type="email" aria-label="Введите ваш Email." autocomplete="off" required placeholder="Email">
+              </div>
+              <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-required>
+                <input id="personaldata" name="personaldata" type="checkbox" checked required>
+                <label for="personaldata" data-message-base="Поле обязательно к заполнению">
+                  <span class="custom-toggle__icon"></span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных
+                </label>
+              </div>
+              <button class="feedback__form-button btn" type="submit">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <h2 class="visually-hidden">Местоположение на карте.</h2>
+        <div class="contacts__container container">
+          <div class="contacts__map map" id="map"></div>
+          <div class="contacts__description">
+            <h3>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</h3>
+            <address class="contacts__link">
+              <svg aria-hidden="true" width="18" height="22" focusable="false" viewbox="0 0 18 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.364 15.5563L9 22L2.636 15.5563C1.37734 14.2819 0.520187 12.6581 0.172928 10.8905C-0.17433 9.12277 0.00390685 7.29051 0.685099 5.62539C1.36629 3.96027 2.51984 2.53707 3.99988 1.53576C5.47992 0.534448 7.21998 0 9 0C10.78 0 12.5201 0.534448 14.0001 1.53576C15.4802 2.53707 16.6337 3.96027 17.3149 5.62539C17.9961 7.29051 18.1743 9.12277 17.8271 10.8905C17.4798 12.6581 16.6227 14.2819 15.364 15.5563ZM9 11.1377C9.53044 11.1377 10.0391 10.9243 10.4142 10.5445C10.7893 10.1648 11 9.64969 11 9.11262C11 8.57554 10.7893 8.06047 10.4142 7.6807C10.0391 7.30093 9.53044 7.08757 9 7.08757C8.46957 7.08757 7.96086 7.30093 7.58579 7.6807C7.21072 8.06047 7 8.57554 7 9.11262C7 9.64969 7.21072 10.1648 7.58579 10.5445C7.96086 10.9243 8.46957 11.1377 9 11.1377Z" fill="#011c40" />
+              </svg>
+              <p>г. Санкт-Петербург, ул. Большая Конюшенная, 19/8</p>
+            </address>
+            <a class="contacts__link oll-links" href="tel:88002000000">
+              <svg aria-hidden="true" width="18" height="18" focusable="false" viewbox="0 0 18 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 13.42V16.956C18.0001 17.2092 17.9042 17.453 17.7316 17.6382C17.559 17.8234 17.3226 17.9363 17.07 17.954C16.633 17.984 16.276 18 16 18C7.163 18 0 10.837 0 2C0 1.724 0.015 1.367 0.046 0.93C0.0637224 0.677444 0.176581 0.441011 0.361804 0.268409C0.547026 0.0958068 0.790823 -0.000114433 1.044 2.56579e-07H4.58C4.70404 -0.000125334 4.8237 0.045859 4.91573 0.12902C5.00776 0.212182 5.0656 0.326583 5.078 0.45C5.101 0.68 5.122 0.863 5.142 1.002C5.34073 2.38892 5.748 3.73783 6.35 5.003C6.445 5.203 6.383 5.442 6.203 5.57L4.045 7.112C5.36445 10.1865 7.81455 12.6365 10.889 13.956L12.429 11.802C12.4919 11.714 12.5838 11.6509 12.6885 11.6237C12.7932 11.5964 12.9042 11.6068 13.002 11.653C14.267 12.2539 15.6156 12.6601 17.002 12.858C17.141 12.878 17.324 12.9 17.552 12.922C17.6752 12.9346 17.7894 12.9926 17.8724 13.0846C17.9553 13.1766 18.0012 13.2961 18.001 13.42H18Z" fill="currentColor" />
+              </svg>
+              <p>8-800-200-00-00</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container ">
+        <a class="footer__logo-link oll-links" href="index.html">
+          <picture class="footer__logo-picture">
+            <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+            <source media="(max-width: 1023px)" srcset="img/svg/logo-tablet.svg">
+            <img src="img/svg/logo-desktop.svg" width="70" height="38" alt="Логотип сайта Круизы в Антарктику в виде заснеженного горного хребта.">
+          </picture>
+          <span class="visually-hidden">Вернуться на главную страницу.</span>
+        </a>
+        <nav>
+          <ul class="footer__navigation-list list-reset">
+            <li>
+              <a class="footer__navigation-link" href="#">
+                Преимущества
+              </a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">
+                Направления
+              </a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">
+                Ближайшие круизы
+              </a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__social-list list-reset">
+          <li>
+            <a class="footer__social-link" href="#">
+              <svg aria-hidden="true" focusable="false" width="20" height="20" viewbox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.875 3.02543C7.07072 3.02543 8.04314 3.9842 8.04314 5.16312C8.04314 6.3385 7.07072 7.29726 5.875 7.29726C4.67928 7.29726 3.70687 6.3385 3.70687 5.16312C3.70687 3.9842 4.67928 3.02543 5.875 3.02543ZM5.875 10.3227C8.76345 10.3227 11.1117 8.00746 11.1117 5.16312C11.1117 2.31524 8.76345 0 5.875 0C2.98655 0 0.641942 2.31524 0.641942 5.16312C0.641942 8.00746 2.98655 10.3227 5.875 10.3227ZM7.99271 14.5342C9.05877 14.2927 10.0852 13.8772 11.0324 13.2913C11.7491 12.8474 11.9652 11.9135 11.515 11.2069C11.0612 10.4967 10.1176 10.2836 9.39732 10.7311C7.2544 12.0591 4.4956 12.0591 2.34908 10.7311C1.63237 10.2836 0.685162 10.4967 0.234968 11.2069C-0.215227 11.9135 0.000865602 12.8474 0.717575 13.2913C1.66478 13.8772 2.69123 14.2927 3.75729 14.5342L0.829223 17.4176C0.231365 18.007 0.231365 18.9658 0.829223 19.5552C1.13175 19.85 1.52072 19.9991 1.91329 19.9991C2.30586 19.9991 2.69843 19.85 3.00096 19.5552L5.875 16.7216L8.75264 19.5552C9.3505 20.1483 10.3193 20.1483 10.9208 19.5552C11.5186 18.9658 11.5186 18.007 10.9208 17.4176L7.99271 14.5342Z" fill="currentColor" />
+              </svg>
+              <span class="visually-hidden">Одноклассники.</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="#">
+              <svg aria-hidden="true" focusable="false" width="20" height="20" viewbox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5586 9.55711C19.5604 9.55711 19.5617 9.55711 19.5634 9.55711C19.6852 9.55711 19.8014 9.50602 19.8839 9.41652C19.9677 9.3257 20.0092 9.20389 19.9983 9.08076C19.5599 4.25925 15.7429 0.440639 10.9212 0.00140703C10.7989 -0.00819844 10.6758 0.0315333 10.585 0.1158C10.4942 0.199629 10.4436 0.317951 10.4449 0.441512C10.5208 6.84924 11.3661 9.4676 19.5586 9.55711ZM19.5586 10.4426C11.3661 10.5321 10.5213 13.1504 10.4453 19.5581C10.444 19.6817 10.4946 19.8 10.5855 19.8839C10.6667 19.9585 10.7728 20 10.8819 20C10.895 20 10.9085 19.9996 10.9216 19.9983C15.7433 19.559 19.5604 15.7408 19.9983 10.9189C20.0092 10.7958 19.9681 10.674 19.8839 10.5831C19.7996 10.4923 19.6822 10.4474 19.5586 10.4426ZM9.04954 0.00359014C4.24316 0.455484 0.438304 4.27322 0.0021535 9.08163C-0.00876118 9.20476 0.032278 9.32658 0.116539 9.41739C0.199054 9.5069 0.315623 9.55754 0.436994 9.55754C0.43874 9.55754 0.440487 9.55754 0.442233 9.55754C8.60772 9.46367 9.45077 6.84662 9.52761 0.443259C9.52892 0.319697 9.47784 0.200939 9.38703 0.117109C9.29534 0.0332798 9.17266 -0.00776178 9.04954 0.00359014ZM0.441797 10.4421C0.306018 10.4268 0.199491 10.4915 0.116103 10.5823C0.0322781 10.6731 -0.00919773 10.7949 0.00171694 10.918C0.437867 15.7264 4.24316 19.5442 9.04954 19.9961C9.06308 19.9974 9.07705 19.9978 9.09058 19.9978C9.19973 19.9978 9.30538 19.9568 9.38659 19.8821C9.4774 19.7983 9.52848 19.6795 9.52717 19.556C9.45033 13.153 8.60772 10.536 0.441797 10.4421Z" fill="currentColor" />
+              </svg>
+              <span class="visually-hidden">Дзэн.</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="#">
+              <svg aria-hidden="true" focusable="false" width="20" height="20" viewbox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.9453 0C11.304 0 10.7021 0.325343 10.3161 0.794521C9.93009 1.2637 9.71732 1.83562 9.56231 2.43836C9.31611 3.40753 9.24012 4.48288 9.22188 5.45205C7.41944 5.57192 5.78722 6.10616 4.43159 6.93151C3.88143 6.46918 3.21882 6.21233 2.58356 6.21918C1.86015 6.22603 1.17322 6.53767 0.662576 7.17808C-0.313112 8.40068 -0.200649 10.4007 0.930054 11.589C0.860145 11.9555 0.808473 12.3322 0.808473 12.7123C0.808473 16.7397 4.92399 20 10 20C15.076 20 19.1915 16.7363 19.1915 12.7123C19.1915 12.3322 19.1399 11.9555 19.0699 11.589C20.2006 10.4007 20.3131 8.40068 19.3374 7.17808C18.8268 6.53767 18.1399 6.22603 17.4164 6.21918C16.7812 6.21233 16.1186 6.46918 15.5684 6.93151C14.2189 6.10959 12.5958 5.57534 10.8024 5.45205C10.8268 4.55822 10.8906 3.63014 11.0699 2.93151C11.1824 2.49315 11.3161 2.17466 11.459 2C11.6018 1.82534 11.7052 1.75342 11.9453 1.75342C12.4651 1.75342 12.5319 1.92123 12.845 2.32877C13.0031 2.53425 13.1854 2.7911 13.4772 3.0411C13.769 3.2911 14.2006 3.50685 14.6687 3.50685V1.75342C14.538 1.75342 14.5137 1.75 14.4256 1.67123C14.3374 1.59247 14.2158 1.41096 14.0365 1.17808C13.6778 0.708904 12.9818 0 11.9453 0ZM17.0031 0.164384C15.7933 0.164384 14.8146 1.26712 14.8146 2.63014C14.8146 3.99315 15.7933 5.09589 17.0031 5.09589C18.2128 5.09589 19.1915 3.99315 19.1915 2.63014C19.1915 1.26712 18.2128 0.164384 17.0031 0.164384ZM17.0031 1.0411C17.7812 1.0411 18.4134 1.75342 18.4134 2.63014C18.4134 3.50685 17.7812 4.21918 17.0031 4.21918C16.225 4.21918 15.5927 3.50685 15.5927 2.63014C15.5927 1.75342 16.225 1.0411 17.0031 1.0411ZM10 6.82192C14.307 6.82192 17.9514 9.52397 17.9514 12.7123C17.9514 15.9041 14.307 18.6027 10 18.6027C5.69299 18.6027 2.0486 15.9041 2.0486 12.7123C2.0486 9.52397 5.69299 6.82192 10 6.82192ZM2.60787 7.61644C2.82368 7.61986 3.0486 7.67466 3.26441 7.78082C2.48325 8.44863 1.86319 9.21575 1.44069 10.0822C1.1489 9.40411 1.22793 8.55822 1.58659 8.10959C1.84799 7.78082 2.20969 7.61301 2.60787 7.61644ZM17.3921 7.61644C17.7903 7.61301 18.152 7.78082 18.4134 8.10959C18.7721 8.55822 18.8511 9.40411 18.5593 10.0822C18.1368 9.21575 17.5167 8.44863 16.7356 7.78082C16.9514 7.67466 17.1763 7.61986 17.3921 7.61644ZM6.88753 9.80822C6.10941 9.80822 5.47719 10.5205 5.47719 11.3973C5.47719 12.274 6.10941 12.9863 6.88753 12.9863C7.66564 12.9863 8.29786 12.274 8.29786 11.3973C8.29786 10.5205 7.66564 9.80822 6.88753 9.80822ZM13.1125 9.80822C12.3344 9.80822 11.7021 10.5205 11.7021 11.3973C11.7021 12.274 12.3344 12.9863 13.1125 12.9863C13.8906 12.9863 14.5228 12.274 14.5228 11.3973C14.5228 10.5205 13.8906 9.80822 13.1125 9.80822ZM6.13372 15.2055C6.62917 16.3596 8.16109 17.4795 10 17.4795C11.8389 17.4795 13.3952 16.3596 13.8906 15.2055C12.9909 15.8596 11.5714 16.3014 10 16.3014C8.42857 16.3014 7.03342 15.8596 6.13372 15.2055Z" fill="currentColor" />
+              </svg>
+              <span class="visually-hidden">Рэддит.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=7c70a677-2343-4514-aa84-bc38e108561a&amp;lang=ru_RU"></script>
+</body>
+
+</html>
