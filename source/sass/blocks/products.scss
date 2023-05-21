@@ -218,8 +218,10 @@
     z-index: 1;
 
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     width: max-content;
+    max-width: 300px;
     height: 100%;
     margin: 0;
     padding: 22px 30px;
@@ -240,7 +242,7 @@
 }
 
 .products__image {
-  overflow: auto;
+  overflow-y: auto;
 
   scrollbar-width: none;
 
