@@ -242,6 +242,7 @@
 
 .header__navigation-list {
   display: grid;
+  margin-bottom: 20px;
 
   gap: 33px;
   grid-template-columns: repeat(4, max-content);

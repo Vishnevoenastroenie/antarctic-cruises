@@ -1,70 +1,141 @@
 @import "../variables";
 
 .main-block {
-  width: 100%;
-
-  background-color: $color-endeavour;
-}
-
-.main-block__container {
   position: relative;
 
-  display: grid;
-  max-width: 100%;
-  height: max-content;
-  margin: 0 auto;
+  overflow: hidden;
 
-  grid-template-columns: auto 1000px auto;
+  background: width 100%;
+  background-color: $color-endeavour;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: (0 4px 4px rgba($color-default-black, 0.25));
+
+  @media (min-width: 1024px) {
+    min-height: 650px;
+
+    background: width 100%;
+    background-image: url("./../img/main-block.jpg");
+
+    @supports (background-image: url("./../img/main-block.webp")) {
+      background: width 100%;
+      background-image: url("./../img/main-block.webp");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: width 100%;
+      background-image: url("./../img/main-block@2x.jpg");
+
+      @supports (background-image: url("./../img/main-block@2x.webp")) {
+        min-height: 650px;
+
+        background: width 100%;
+        background-image: url("./../img/main-block@2x.webp");
+      }
+    }
+  }
 
   @media (max-width: $tablet-size-max) {
-    grid-template-columns: auto 100% auto;
+    min-height: 638px;
+
+    background: width 100%;
+    background-image: url("./../img/main-block-tablet.jpg");
+    background-position: bottom;
+    box-shadow: none;
+
+    @supports (background-image: url("./../img/main-block-tablet.webp")) {
+      background: width 100%;
+      background-image: url("./../img/main-block-tablet.webp");
+      background-position: bottom;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: width 100%;
+      background-image: url("./../img/main-block-tablet@2x.jpg");
+      background-position: bottom;
+
+      @supports (background-image: url("./../img/main-block-tablet@2x.webp")) {
+        background: width 100%;
+        background-image: url("./../img/main-block-tablet@2x.webp");
+        background-position: bottom;
+      }
+    }
   }
-}
 
-.main-block__image {
-  position: absolute;
+  @media (max-width: $mobile-size-max) {
+    background: width 100%;
+    background-image: url("./../img/main-block-mobile.jpg");
+    background-position: bottom;
 
-  width: 100%;
-  height: 100%;
+    @supports (background-image: url("./../img/main-block-mobile.webp")) {
+      background: width 100%;
+      background-image: url("./../img/main-block-mobile.webp");
+      background-position: bottom;
+    }
 
-  background-color: $color-endeavour;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: width 100%;
+      background-image: url("./../img/main-block-mobile@2x.jpg");
+      background-position: bottom;
 
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
-
-  img {
-    width: 100%;
-    height: 100%;
-
-    box-shadow: (0 4px 4px rgba($color-default-black, 0.25));
-
-    object-fit: cover;
-    object-position: 50% 100%;
-
-    @media (max-width: $tablet-size-max) {
-      box-shadow: none;
+      @supports (background-image: url("./../img/main-block-mobile@2x.webp")) {
+        background: width 100%;
+        background-image: url("./../img/main-block-mobile@2x.webp");
+        background-position: bottom;
+      }
     }
   }
 }
 
-.main-block__description {
-  position: relative;
-
-  padding: 270px 15px 277px;
-
-  color: $color-alice-blue;
-
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+.main-block__container {
+  display: flex;
+  align-items: center;
+  min-height: 650px;
 
   @media (max-width: $tablet-size-max) {
-    padding: 268px 46px;
-    padding-bottom: 274px;
+    min-height: 638px;
   }
 
   @media (max-width: $mobile-size-max) {
-    padding: 175px 15px;
-    padding-bottom: 179px;
+    min-height: 500px;
+  }
+}
+
+.main-block__description {
+  max-width: 1260px;
+  padding-bottom: 6px;
+  padding-left: 198px;
+
+  color: $color-alice-blue;
+
+  @media (max-width: 1300px) {
+    padding-left: 180px;
+  }
+
+  @media (max-width: 1250px) {
+    padding-left: 150px;
+  }
+
+  @media (max-width: 1200px) {
+    padding-left: 100px;
+  }
+
+  @media (max-width: 1150px) {
+    padding-left: 70px;
+  }
+
+  @media (max-width: 1030px) {
+    padding-left: 50px;
+  }
+
+  @media (max-width: $tablet-size-max) {
+    padding-bottom: 11px;
+    padding-left: 45px;
+  }
+
+  @media (max-width: $mobile-size-max) {
+    padding-bottom: 0;
+    padding-left: 15px;
   }
 
   h1 {
