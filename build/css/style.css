@@ -1619,6 +1619,23 @@ button,
   padding-left: 198px;
   color: #f9fbfd;
 }
+@media (max-width: 3400px) {
+  .main-block__description {
+    max-width: 100%;
+    padding-left: 830px;
+  }
+}
+@media (max-width: 2600px) {
+  .main-block__description {
+    max-width: 100%;
+    padding-left: 800px;
+  }
+}
+@media (max-width: 1366px) {
+  .main-block__description {
+    padding-left: 198px;
+  }
+}
 @media (max-width: 1300px) {
   .main-block__description {
     padding-left: 180px;

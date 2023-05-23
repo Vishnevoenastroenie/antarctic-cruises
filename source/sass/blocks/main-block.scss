@@ -107,6 +107,20 @@
 
   color: $color-alice-blue;
 
+  @media (max-width: 3400px) {
+    max-width: 100%;
+    padding-left: 830px;
+  }
+
+  @media (max-width: 2600px) {
+    max-width: 100%;
+    padding-left: 800px;
+  }
+
+   @media (max-width: 1366px) {
+    padding-left: 198px;
+  }
+
   @media (max-width: 1300px) {
     padding-left: 180px;
   }
