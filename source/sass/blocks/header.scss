@@ -1,16 +1,5 @@
 @import "../variables";
 
-.header {
-  position: absolute;
-  top: 0;
-  z-index: 5;
-
-  width: 100%;
-  min-height: 110px;
-
-  color: $color-alice-blue;
-}
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -85,6 +74,8 @@
   align-items: center;
   max-width: 600px;
 
+  color: $color-alice-blue;
+
   @media (max-width: $tablet-size-max) {
     max-width: 504px;
   }
@@ -103,6 +94,10 @@
 
     background-color: $color-alice-blue;
   }
+}
+
+.header__container.is-open {
+  height: 100vh;
 }
 
 .is-open .header__navigation {
@@ -242,7 +237,6 @@
 
 .header__navigation-list {
   display: grid;
-  margin-bottom: 20px;
 
   gap: 33px;
   grid-template-columns: repeat(4, max-content);

@@ -1,6 +1,5 @@
 @import "../variables";
 
-//Добавляет измененние, чтобы ещё один деплой сделать
 .main-block {
   position: relative;
 
@@ -37,8 +36,6 @@
   }
 
   @media (max-width: $tablet-size-max) {
-    min-height: 638px;
-
     background: width 100%;
     background-image: url("./../img/main-block-tablet.jpg");
     background-position: bottom;
@@ -91,20 +88,20 @@
 .main-block__container {
   display: flex;
   align-items: center;
-  min-height: 650px;
+  min-height: 542px;
 
   @media (max-width: $tablet-size-max) {
-    min-height: 638px;
+    min-height: 558px;
   }
 
   @media (max-width: $mobile-size-max) {
-    min-height: 500px;
+    min-height: 436px;
   }
 }
 
 .main-block__description {
   max-width: 1260px;
-  padding-bottom: 6px;
+  padding-bottom: 115px;
   padding-left: 198px;
 
   color: $color-alice-blue;
@@ -130,12 +127,12 @@
   }
 
   @media (max-width: $tablet-size-max) {
-    padding-bottom: 11px;
+    padding-bottom: 86px;
     padding-left: 45px;
   }
 
   @media (max-width: $mobile-size-max) {
-    padding-bottom: 0;
+    padding-bottom: 64px;
     padding-left: 15px;
   }
 
