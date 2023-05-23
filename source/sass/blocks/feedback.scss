@@ -79,67 +79,6 @@
   gap: 40px;
   grid-template-columns: 1fr 1fr;
 
-  @media (max-width: 3400px) {
-    display: grid;
-    align-items: center;
-    padding: 50px 850px 50px;
-
-    gap: 40px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: 2700px) {
-    padding: 50px 720px 50px;
-  }
-
-  @media (max-width: 2500px) {
-    padding: 50px 630px 50px;
-  }
-
-  @media (max-width: 2400px) {
-    padding: 50px 600px 50px;
-  }
-
-  @media (max-width: 2300px) {
-    padding: 50px 550px 26px;
-  }
-
-  @media (max-width: 2200px) {
-    padding: 50px 490px 50px;
-  }
-
-  @media (max-width: 2100px) {
-    padding: 50px 400px 50px;
-  }
-
-  @media (max-width: 2000px) {
-    padding: 50px 390px 50px;
-  }
-
-  @media (max-width: 1900px) {
-    padding: 50px 350px 50px;
-  }
-
-  @media (max-width: 1800px) {
-    padding: 50px 300px 50px;
-  }
-
-  @media (max-width: 1700px) {
-    padding: 50px 230px 50px;
-  }
-
-  @media (max-width: 1600px) {
-    padding: 50px 190px 50px;
-  }
-
-  @media (max-width: 1500px) {
-    padding: 50px 170px 50px;
-  }
-
-  @media (max-width: 1366px) {
-    padding: 50px 163px 50px;
-  }
-
   @media (max-width: $tablet-size-max) {
     display: flex;
     flex-direction: column;
