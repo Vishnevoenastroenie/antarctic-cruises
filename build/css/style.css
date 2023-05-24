@@ -1629,9 +1629,16 @@ button,
 }
 @media (max-width: 767px) {
   .main-block__description {
+    width: 100%;
     padding-right: 0;
     padding-bottom: 64px;
     padding-left: 15px;
+  }
+}
+@media (max-width: 460px) {
+  .main-block__description {
+    margin-right: 10px;
+    margin-left: -1px;
   }
 }
 .main-block__description h1 {
