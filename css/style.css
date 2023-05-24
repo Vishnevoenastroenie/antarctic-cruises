@@ -2769,10 +2769,6 @@ button,
     width: 239px;
   }
 
-  .products__btn {
-    width: 100%;
-  }
-
   .feedback__container p {
     margin-left: 34px;
   }
@@ -3129,6 +3125,7 @@ button,
 
   .products__btn {
     padding: 10px;
+    width: 100%;
   }
 
   .feedback {
