@@ -61,7 +61,7 @@
     column-gap: 4.5%;
 
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 29px;
+    row-gap: 30px;
   }
 
   @media (max-width: $mobile-size-max) {
@@ -204,7 +204,7 @@
     max-width: none;
     height: auto;
 
-    aspect-ratio: 1 / 1.25;
+    aspect-ratio: 1 / 1.19;
   }
 
   @media (max-width: $mobile-size-max) {
@@ -302,7 +302,15 @@
     opacity: 1;
   }
 
-  @media (max-width: $tablet-size-max) {
+  @media (max-width: $mobile-size-max) {
     padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    width: 239px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 }
