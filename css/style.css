@@ -2538,7 +2538,7 @@ button,
     column-gap: 4.5%;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 29px;
+    row-gap: 30px;
   }
 
   .products__description {
@@ -2553,15 +2553,11 @@ button,
     width: 100%;
     max-width: none;
     height: auto;
-    aspect-ratio: 1/1.25;
+    aspect-ratio: 1/1.19;
   }
 
   .products__item h3 {
     padding: 27px 35px;
-  }
-
-  .products__btn {
-    padding: 10px;
   }
 
   .feedback {
@@ -2769,6 +2765,14 @@ button,
 }
 
 @media (max-width: 768px) {
+  .products__btn {
+    width: 239px;
+  }
+
+  .products__btn {
+    width: 100%;
+  }
+
   .feedback__container p {
     margin-left: 34px;
   }
@@ -3121,6 +3125,10 @@ button,
 
   .products__item h3 {
     padding: 18px 25px;
+  }
+
+  .products__btn {
+    padding: 10px;
   }
 
   .feedback {
