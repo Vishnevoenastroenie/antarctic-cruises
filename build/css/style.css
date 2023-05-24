@@ -2360,18 +2360,14 @@ button,
 .products__btn:active {
   opacity: 1;
 }
-@media (max-width: 767px) {
-  .products__btn {
-    padding: 10px;
-  }
-}
 @media (max-width: 768px) {
   .products__btn {
     width: 239px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .products__btn {
+    padding: 10px;
     width: 100%;
   }
 }

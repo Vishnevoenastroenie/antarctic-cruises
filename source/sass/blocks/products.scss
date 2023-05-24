@@ -302,15 +302,12 @@
     opacity: 1;
   }
 
-  @media (max-width: $mobile-size-max) {
-    padding: 10px;
-  }
-
   @media (max-width: 768px) {
     width: 239px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile-size-max) {
+    padding: 10px;
     width: 100%;
   }
 }
