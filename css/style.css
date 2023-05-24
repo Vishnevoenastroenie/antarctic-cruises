@@ -3000,6 +3000,7 @@ button,
   }
 
   .main-block__description {
+    width: 100%;
     padding-right: 0;
     padding-bottom: 64px;
     padding-left: 15px;
@@ -3342,6 +3343,13 @@ button,
 @media (max-width: 760px) {
   .feedback__container p {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .main-block__description {
+    margin-right: 10px;
+    margin-left: -1px;
   }
 }
 
