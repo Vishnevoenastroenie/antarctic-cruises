@@ -19,6 +19,10 @@
   }
 }
 
+.header__container.is-open {
+  height: 100vh;
+}
+
 .header__logo-link {
   @media (max-width: $tablet-size-max) {
     width: 38px;
@@ -96,15 +100,9 @@
   }
 }
 
-.header__container.is-open {
-  height: 100vh;
-}
-
 .is-open .header__navigation {
   @media (max-width: $mobile-size-max) {
     max-width: 285px;
-    max-height: 100vh;
-    overflow-y: scroll;
   }
 }
 
@@ -139,8 +137,6 @@
   pointer-events: none;
 
   @media (max-width: $mobile-size-max) {
-    height: 100vh;
-
     background-color: rgba(0, 43, 102, 0.5);
 
     pointer-events: all;
